@@ -9,16 +9,66 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            ZStack {
+                Image("background")
+                    .resizable()
+                    .scaledToFill()
+                    .edgesIgnoringSafeArea(.all)
+                    .opacity(1.0)
+                VStack {
+                    NavigationLink(destination: EsportsMainView()) {
+                        Text("Actualités")
+                            .font(.custom("LEMONMILK-Bold", size: 28))
+                            .foregroundColor(.white)
+                            .padding(.all)                            .overlay(
+                                RoundedRectangle(cornerRadius: 5)
+                                    .stroke(.white, lineWidth: 2)
+                            )
+                            .padding(.all)
+                    }
+                    
+                    NavigationLink(destination: EsportsMainView()) {
+                        Text("Esports")
+                            .font(.custom("LEMONMILK-Bold", size: 28))
+                            .fontWeight(.bold)
+                            .foregroundColor(Color.white)
+                            .padding(.all)                            .overlay(
+                                RoundedRectangle(cornerRadius: 5)
+                                    .stroke(.white, lineWidth: 2)
+                            )
+                            .padding(.all)
+                    }
+                    
+                    NavigationLink(destination: DirectView()) {
+                        Text("DIRECT")
+                            .font(.custom("LEMONMILK-Bold", size: 28))
+                            .fontWeight(.bold)
+                            .foregroundColor(Color.white)
+                            .padding(.all)                            .overlay(
+                                RoundedRectangle(cornerRadius: 5)
+                                    .stroke(.white, lineWidth: 2)
+                            )
+                            .padding(.all)
+                    }
+                    
+                    NavigationLink(destination: EsportsMainView()) {
+                        Text("Shop")
+                            .font(.custom("LEMONMILK-Bold", size: 28))
+                            .fontWeight(.bold)
+                            .foregroundColor(Color.white)
+                            .padding(.all)                            .overlay(
+                                RoundedRectangle(cornerRadius: 5)
+                                    .stroke(.white, lineWidth: 2)
+                                
+                            )
+                            .padding(.all)
+                    }
+                }
+            }
         }
-        .padding()
     }
 }
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
