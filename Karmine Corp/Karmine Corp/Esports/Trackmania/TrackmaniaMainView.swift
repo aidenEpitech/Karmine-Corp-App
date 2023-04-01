@@ -21,22 +21,25 @@ struct TrackmaniaMainView: View {
                     .resizable()
                     .frame(width: 200.0, height: 63.0)
                 Spacer()
-                
-                Text("Résultats")
-                    .font(.custom("LEMONMILK-Bold", size: 28))
-                    .foregroundColor(.white)
-                    .padding(.all)                            .overlay(
-                        RoundedRectangle(cornerRadius: 5)
-                            .stroke(.white, lineWidth: 2)
-                    )
+                NavigationLink(destination: TrackmaniaResultsView()) {
+                    Text("Résultats")
+                        .font(.custom("LEMONMILK-Bold", size: 28))
+                        .foregroundColor(.white)
+                        .padding(.all)                            .overlay(
+                            RoundedRectangle(cornerRadius: 5)
+                                .stroke(.white, lineWidth: 2)
+                        )
+                }
                     .padding(.all)
-                Text("équipes")
-                    .font(.custom("LEMONMILK-Bold", size: 28))
-                    .foregroundColor(.white)
-                    .padding(.all)                            .overlay(
-                        RoundedRectangle(cornerRadius: 5)
-                            .stroke(.white, lineWidth: 2)
-                    )
+                NavigationLink(destination: TrackmaniaTeamView()) {
+                    Text("équipes")
+                        .font(.custom("LEMONMILK-Bold", size: 28))
+                        .foregroundColor(.white)
+                        .padding(.all)                            .overlay(
+                            RoundedRectangle(cornerRadius: 5)
+                                .stroke(.white, lineWidth: 2)
+                        )
+                }
                     .padding(.all)
                 Spacer()
                 Spacer()

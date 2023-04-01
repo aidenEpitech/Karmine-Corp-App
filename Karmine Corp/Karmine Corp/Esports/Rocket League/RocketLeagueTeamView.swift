@@ -26,14 +26,14 @@ struct RocketLeagueTeamView: View {
                     )
                 HStack {
                     VStack {
-                        Image("whiteinn-profile")
+                        Image("exotiik-profile")
                             .cornerRadius(15)
-                        Text("whiteinn")
+                        Text("ExoTiik")
                             .font(.custom("LEMONMILK-Bold", size: 15))
                             .foregroundColor(Color.white)
                         HStack {
                             Button(action: {
-                                if let url = URL(string: "https://www.youtube.com/@Karmine_Corp") {
+                                if let url = URL(string: "https://twitter.com/exotiikrl") {
                                     UIApplication.shared.open(url)
                                 }
                             }) {
@@ -43,7 +43,7 @@ struct RocketLeagueTeamView: View {
                                     .padding(.horizontal, -5)
                             }
                             Button(action: {
-                                if let url = URL(string: "https://www.youtube.com/@Karmine_Corp") {
+                                if let url = URL(string: "https://www.instagram.com/brice.bgrd/") {
                                     UIApplication.shared.open(url)
                                 }
                             }) {
@@ -53,36 +53,26 @@ struct RocketLeagueTeamView: View {
                                     .padding(.horizontal, -5)
                             }
                             Button(action: {
-                                if let url = URL(string: "https://www.youtube.com/@Karmine_Corp") {
-                                    UIApplication.shared.open(url)
-                                }
-                            }) {
-                                Image("youtube-icon-profile")
-                                    .resizable()
-                                    .frame(width: 30, height: 30)
-                                    .padding(.horizontal, -5)
-                            }
-                            Button(action: {
-                                if let url = URL(string: "https://www.youtube.com/@Karmine_Corp") {
+                                if let url = URL(string: "https://www.twitch.tv/exotiikrl") {
                                     UIApplication.shared.open(url)
                                 }
                             }) {
                                 Image("twitch-icon-profile")
                                     .resizable()
                                     .frame(width: 35, height: 35)
-                                    .padding(.horizontal, -10)
+                                    .padding(.horizontal, -7)
                             }
                         }
                     }
                     VStack {
-                        Image("whiteinn-profile")
+                        Image("vatira-profile")
                             .cornerRadius(15)
-                        Text("whiteinn")
+                        Text("Vatira")
                             .font(.custom("LEMONMILK-Bold", size: 15))
                             .foregroundColor(Color.white)
                         HStack {
                             Button(action: {
-                                if let url = URL(string: "https://www.youtube.com/@Karmine_Corp") {
+                                if let url = URL(string: "https://twitter.com/Vatira5") {
                                     UIApplication.shared.open(url)
                                 }
                             }) {
@@ -92,7 +82,7 @@ struct RocketLeagueTeamView: View {
                                     .padding(.horizontal, -5)
                             }
                             Button(action: {
-                                if let url = URL(string: "https://www.youtube.com/@Karmine_Corp") {
+                                if let url = URL(string: "https://www.instagram.com/vatira__/") {
                                     UIApplication.shared.open(url)
                                 }
                             }) {
@@ -102,36 +92,26 @@ struct RocketLeagueTeamView: View {
                                     .padding(.horizontal, -5)
                             }
                             Button(action: {
-                                if let url = URL(string: "https://www.youtube.com/@Karmine_Corp") {
-                                    UIApplication.shared.open(url)
-                                }
-                            }) {
-                                Image("youtube-icon-profile")
-                                    .resizable()
-                                    .frame(width: 30, height: 30)
-                                    .padding(.horizontal, -5)
-                            }
-                            Button(action: {
-                                if let url = URL(string: "https://www.youtube.com/@Karmine_Corp") {
+                                if let url = URL(string: "https://www.twitch.tv/vatira_") {
                                     UIApplication.shared.open(url)
                                 }
                             }) {
                                 Image("twitch-icon-profile")
                                     .resizable()
                                     .frame(width: 35, height: 35)
-                                    .padding(.horizontal, -10)
+                                    .padding(.horizontal, -7)
                             }
                         }
                     }
                     VStack {
-                        Image("whiteinn-profile")
+                        Image("itachi-profile")
                             .cornerRadius(15)
-                        Text("whiteinn")
+                        Text("Itachi")
                             .font(.custom("LEMONMILK-Bold", size: 15))
                             .foregroundColor(Color.white)
                         HStack {
                             Button(action: {
-                                if let url = URL(string: "https://www.youtube.com/@Karmine_Corp") {
+                                if let url = URL(string: "https://twitter.com/itachi_rl") {
                                     UIApplication.shared.open(url)
                                 }
                             }) {
@@ -141,7 +121,7 @@ struct RocketLeagueTeamView: View {
                                     .padding(.horizontal, -5)
                             }
                             Button(action: {
-                                if let url = URL(string: "https://www.youtube.com/@Karmine_Corp") {
+                                if let url = URL(string: "https://www.instagram.com/itachirl_/") {
                                     UIApplication.shared.open(url)
                                 }
                             }) {
@@ -151,124 +131,14 @@ struct RocketLeagueTeamView: View {
                                     .padding(.horizontal, -5)
                             }
                             Button(action: {
-                                if let url = URL(string: "https://www.youtube.com/@Karmine_Corp") {
-                                    UIApplication.shared.open(url)
-                                }
-                            }) {
-                                Image("youtube-icon-profile")
-                                    .resizable()
-                                    .frame(width: 30, height: 30)
-                                    .padding(.horizontal, -5)
-                            }
-                            Button(action: {
-                                if let url = URL(string: "https://www.youtube.com/@Karmine_Corp") {
+                                if let url = URL(string: "https://www.twitch.tv/itachi_rl") {
                                     UIApplication.shared.open(url)
                                 }
                             }) {
                                 Image("twitch-icon-profile")
                                     .resizable()
                                     .frame(width: 35, height: 35)
-                                    .padding(.horizontal, -10)
-                            }
-                        }
-                    }
-                }
-                HStack {
-                    VStack {
-                        Image("whiteinn-profile")
-                            .cornerRadius(15)
-                        Text("whiteinn")
-                            .font(.custom("LEMONMILK-Bold", size: 15))
-                            .foregroundColor(Color.white)
-                        HStack {
-                            Button(action: {
-                                if let url = URL(string: "https://www.youtube.com/@Karmine_Corp") {
-                                    UIApplication.shared.open(url)
-                                }
-                            }) {
-                                Image("twitter-icon-profile")
-                                    .resizable()
-                                    .frame(width: 30, height: 30)
-                                    .padding(.horizontal, -5)
-                            }
-                            Button(action: {
-                                if let url = URL(string: "https://www.youtube.com/@Karmine_Corp") {
-                                    UIApplication.shared.open(url)
-                                }
-                            }) {
-                                Image("instagram-icon-profile")
-                                    .resizable()
-                                    .frame(width: 20, height: 20)
-                                    .padding(.horizontal, -5)
-                            }
-                            Button(action: {
-                                if let url = URL(string: "https://www.youtube.com/@Karmine_Corp") {
-                                    UIApplication.shared.open(url)
-                                }
-                            }) {
-                                Image("youtube-icon-profile")
-                                    .resizable()
-                                    .frame(width: 30, height: 30)
-                                    .padding(.horizontal, -5)
-                            }
-                            Button(action: {
-                                if let url = URL(string: "https://www.youtube.com/@Karmine_Corp") {
-                                    UIApplication.shared.open(url)
-                                }
-                            }) {
-                                Image("twitch-icon-profile")
-                                    .resizable()
-                                    .frame(width: 35, height: 35)
-                                    .padding(.horizontal, -10)
-                            }
-                        }
-                    }
-                    VStack {
-                        Image("whiteinn-profile")
-                            .cornerRadius(15)
-                        Text("whiteinn")
-                            .font(.custom("LEMONMILK-Bold", size: 15))
-                            .foregroundColor(Color.white)
-                        HStack {
-                            Button(action: {
-                                if let url = URL(string: "https://www.youtube.com/@Karmine_Corp") {
-                                    UIApplication.shared.open(url)
-                                }
-                            }) {
-                                Image("twitter-icon-profile")
-                                    .resizable()
-                                    .frame(width: 30, height: 30)
-                                    .padding(.horizontal, -5)
-                            }
-                            Button(action: {
-                                if let url = URL(string: "https://www.youtube.com/@Karmine_Corp") {
-                                    UIApplication.shared.open(url)
-                                }
-                            }) {
-                                Image("instagram-icon-profile")
-                                    .resizable()
-                                    .frame(width: 20, height: 20)
-                                    .padding(.horizontal, -5)
-                            }
-                            Button(action: {
-                                if let url = URL(string: "https://www.youtube.com/@Karmine_Corp") {
-                                    UIApplication.shared.open(url)
-                                }
-                            }) {
-                                Image("youtube-icon-profile")
-                                    .resizable()
-                                    .frame(width: 30, height: 30)
-                                    .padding(.horizontal, -5)
-                            }
-                            Button(action: {
-                                if let url = URL(string: "https://www.youtube.com/@Karmine_Corp") {
-                                    UIApplication.shared.open(url)
-                                }
-                            }) {
-                                Image("twitch-icon-profile")
-                                    .resizable()
-                                    .frame(width: 35, height: 35)
-                                    .padding(.horizontal, -10)
+                                    .padding(.horizontal, -7)
                             }
                         }
                     }
@@ -283,102 +153,11 @@ struct RocketLeagueTeamView: View {
                     )
                 HStack {
                     VStack {
-                        Image("whiteinn-profile")
+                        Image("eversax-profile")
                             .cornerRadius(15)
-                        Text("whiteinn")
+                        Text("Eversax")
                             .font(.custom("LEMONMILK-Bold", size: 15))
                             .foregroundColor(Color.white)
-                        HStack {
-                            Button(action: {
-                                if let url = URL(string: "https://www.youtube.com/@Karmine_Corp") {
-                                    UIApplication.shared.open(url)
-                                }
-                            }) {
-                                Image("twitter-icon-profile")
-                                    .resizable()
-                                    .frame(width: 30, height: 30)
-                                    .padding(.horizontal, -5)
-                            }
-                            Button(action: {
-                                if let url = URL(string: "https://www.youtube.com/@Karmine_Corp") {
-                                    UIApplication.shared.open(url)
-                                }
-                            }) {
-                                Image("instagram-icon-profile")
-                                    .resizable()
-                                    .frame(width: 20, height: 20)
-                                    .padding(.horizontal, -5)
-                            }
-                            Button(action: {
-                                if let url = URL(string: "https://www.youtube.com/@Karmine_Corp") {
-                                    UIApplication.shared.open(url)
-                                }
-                            }) {
-                                Image("youtube-icon-profile")
-                                    .resizable()
-                                    .frame(width: 30, height: 30)
-                                    .padding(.horizontal, -5)
-                            }
-                            Button(action: {
-                                if let url = URL(string: "https://www.youtube.com/@Karmine_Corp") {
-                                    UIApplication.shared.open(url)
-                                }
-                            }) {
-                                Image("twitch-icon-profile")
-                                    .resizable()
-                                    .frame(width: 35, height: 35)
-                                    .padding(.horizontal, -10)
-                            }
-                        }
-                    }
-                    VStack {
-                        Image("whiteinn-profile")
-                            .cornerRadius(15)
-                        Text("whiteinn")
-                            .font(.custom("LEMONMILK-Bold", size: 15))
-                            .foregroundColor(Color.white)
-                        HStack {
-                            Button(action: {
-                                if let url = URL(string: "https://www.youtube.com/@Karmine_Corp") {
-                                    UIApplication.shared.open(url)
-                                }
-                            }) {
-                                Image("twitter-icon-profile")
-                                    .resizable()
-                                    .frame(width: 30, height: 30)
-                                    .padding(.horizontal, -5)
-                            }
-                            Button(action: {
-                                if let url = URL(string: "https://www.youtube.com/@Karmine_Corp") {
-                                    UIApplication.shared.open(url)
-                                }
-                            }) {
-                                Image("instagram-icon-profile")
-                                    .resizable()
-                                    .frame(width: 20, height: 20)
-                                    .padding(.horizontal, -5)
-                            }
-                            Button(action: {
-                                if let url = URL(string: "https://www.youtube.com/@Karmine_Corp") {
-                                    UIApplication.shared.open(url)
-                                }
-                            }) {
-                                Image("youtube-icon-profile")
-                                    .resizable()
-                                    .frame(width: 30, height: 30)
-                                    .padding(.horizontal, -5)
-                            }
-                            Button(action: {
-                                if let url = URL(string: "https://www.youtube.com/@Karmine_Corp") {
-                                    UIApplication.shared.open(url)
-                                }
-                            }) {
-                                Image("twitch-icon-profile")
-                                    .resizable()
-                                    .frame(width: 35, height: 35)
-                                    .padding(.horizontal, -10)
-                            }
-                        }
                     }
                 }
                 

@@ -17,26 +17,30 @@ struct LeaguesOfLegendsMainView: View {
                 .opacity(1.0)
         
             VStack {
+                
                 Image("league-of-legends-full-icon")
                     .resizable()
                     .frame(width: 200.0, height: 79.0)
                 Spacer()
-                
-                Text("Résultats")
-                    .font(.custom("LEMONMILK-Bold", size: 28))
-                    .foregroundColor(.white)
-                    .padding(.all)                            .overlay(
-                        RoundedRectangle(cornerRadius: 5)
-                            .stroke(.white, lineWidth: 2)
-                    )
+                NavigationLink(destination: LeaguesOfLegendsResultsView()) {
+                    Text("Résultats")
+                        .font(.custom("LEMONMILK-Bold", size: 28))
+                        .foregroundColor(.white)
+                        .padding(.all)                            .overlay(
+                            RoundedRectangle(cornerRadius: 5)
+                                .stroke(.white, lineWidth: 2)
+                        )
+                }
                     .padding(.all)
-                Text("équipes")
-                    .font(.custom("LEMONMILK-Bold", size: 28))
-                    .foregroundColor(.white)
-                    .padding(.all)                            .overlay(
-                        RoundedRectangle(cornerRadius: 5)
-                            .stroke(.white, lineWidth: 2)
-                    )
+                NavigationLink(destination: LeaguesOfLegendsTeam()) {
+                    Text("équipes")
+                        .font(.custom("LEMONMILK-Bold", size: 28))
+                        .foregroundColor(.white)
+                        .padding(.all)                            .overlay(
+                            RoundedRectangle(cornerRadius: 5)
+                                .stroke(.white, lineWidth: 2)
+                        )
+                }
                     .padding(.all)
                 Spacer()
                 Spacer()

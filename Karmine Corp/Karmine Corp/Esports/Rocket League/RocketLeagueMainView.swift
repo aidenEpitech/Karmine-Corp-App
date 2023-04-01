@@ -21,22 +21,25 @@ struct RocketLeagueMainView: View {
                     .resizable()
                     .frame(width: 200.0, height: 72.0)
                 Spacer()
-                
-                Text("Résultats")
-                    .font(.custom("LEMONMILK-Bold", size: 28))
-                    .foregroundColor(.white)
-                    .padding(.all)                            .overlay(
-                        RoundedRectangle(cornerRadius: 5)
-                            .stroke(.white, lineWidth: 2)
-                    )
+                NavigationLink(destination: RocketLeagueResultsView()) {
+                    Text("Résultats")
+                        .font(.custom("LEMONMILK-Bold", size: 28))
+                        .foregroundColor(.white)
+                        .padding(.all)                            .overlay(
+                            RoundedRectangle(cornerRadius: 5)
+                                .stroke(.white, lineWidth: 2)
+                        )
+                }
                     .padding(.all)
-                Text("équipes")
-                    .font(.custom("LEMONMILK-Bold", size: 28))
-                    .foregroundColor(.white)
-                    .padding(.all)                            .overlay(
-                        RoundedRectangle(cornerRadius: 5)
-                            .stroke(.white, lineWidth: 2)
-                    )
+                NavigationLink(destination: RocketLeagueTeamView()) {
+                    Text("équipes")
+                        .font(.custom("LEMONMILK-Bold", size: 28))
+                        .foregroundColor(.white)
+                        .padding(.all)                            .overlay(
+                            RoundedRectangle(cornerRadius: 5)
+                                .stroke(.white, lineWidth: 2)
+                        )
+                }
                     .padding(.all)
                 Spacer()
                 Spacer()
