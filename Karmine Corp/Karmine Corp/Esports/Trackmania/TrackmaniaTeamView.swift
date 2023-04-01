@@ -1,13 +1,13 @@
 //
-//  LeaguesOfLegendsTeam.swift
+//  TrackmaniaTeamView.swift
 //  Karmine Corp
 //
-//  Created by Aiden MEBARKI on 31/03/2023.
+//  Created by Aiden MEBARKI on 01/04/2023.
 //
 
 import SwiftUI
 
-struct LeaguesOfLegendsTeam: View {
+struct TrackmaniaTeamView: View {
     var body: some View {
         ZStack {
             Image("background")
@@ -387,8 +387,9 @@ struct LeaguesOfLegendsTeam: View {
     }
 }
 
-struct LeaguesOfLegendsTeam_Previews: PreviewProvider {
+
+struct TrackmaniaTeamView_Previews: PreviewProvider {
     static var previews: some View {
-        LeaguesOfLegendsTeam()
+        TrackmaniaTeamView()
     }
 }

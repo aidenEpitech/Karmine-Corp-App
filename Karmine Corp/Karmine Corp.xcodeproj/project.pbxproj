@@ -26,7 +26,12 @@
 		DFBACD9729D71C60002E0669 /* SuperSmashBrosResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBACD9629D71C60002E0669 /* SuperSmashBrosResultsView.swift */; };
 		DFBACD9929D71CEF002E0669 /* TrackmaniaResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBACD9829D71CEF002E0669 /* TrackmaniaResultsView.swift */; };
 		DFBACD9B29D71D17002E0669 /* TeamFightTactisResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBACD9A29D71D17002E0669 /* TeamFightTactisResultsView.swift */; };
-		DFBACD9D29D71DD4002E0669 /* LeaguesOfLegendsTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBACD9C29D71DD4002E0669 /* LeaguesOfLegendsTeam.swift */; };
+		DFBACD9D29D71DD4002E0669 /* LeaguesOfLegendsTeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBACD9C29D71DD4002E0669 /* LeaguesOfLegendsTeamView.swift */; };
+		DFBACDA229D7C3B1002E0669 /* ValorantTeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBACDA129D7C3B1002E0669 /* ValorantTeamView.swift */; };
+		DFBACDA429D7C55D002E0669 /* RocketLeagueTeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBACDA329D7C55D002E0669 /* RocketLeagueTeamView.swift */; };
+		DFBACDA729D7C57E002E0669 /* SuperSmashBrosTeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBACDA629D7C57E002E0669 /* SuperSmashBrosTeamView.swift */; };
+		DFBACDAA29D7C599002E0669 /* TrackmaniaTeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBACDA929D7C599002E0669 /* TrackmaniaTeamView.swift */; };
+		DFBACDAC29D7C5AB002E0669 /* TeamFightTactisTeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBACDAB29D7C5AB002E0669 /* TeamFightTactisTeamView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,7 +56,12 @@
 		DFBACD9629D71C60002E0669 /* SuperSmashBrosResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperSmashBrosResultsView.swift; sourceTree = "<group>"; };
 		DFBACD9829D71CEF002E0669 /* TrackmaniaResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackmaniaResultsView.swift; sourceTree = "<group>"; };
 		DFBACD9A29D71D17002E0669 /* TeamFightTactisResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamFightTactisResultsView.swift; sourceTree = "<group>"; };
-		DFBACD9C29D71DD4002E0669 /* LeaguesOfLegendsTeam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesOfLegendsTeam.swift; sourceTree = "<group>"; };
+		DFBACD9C29D71DD4002E0669 /* LeaguesOfLegendsTeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesOfLegendsTeamView.swift; sourceTree = "<group>"; };
+		DFBACDA129D7C3B1002E0669 /* ValorantTeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValorantTeamView.swift; sourceTree = "<group>"; };
+		DFBACDA329D7C55D002E0669 /* RocketLeagueTeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketLeagueTeamView.swift; sourceTree = "<group>"; };
+		DFBACDA629D7C57E002E0669 /* SuperSmashBrosTeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperSmashBrosTeamView.swift; sourceTree = "<group>"; };
+		DFBACDA929D7C599002E0669 /* TrackmaniaTeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackmaniaTeamView.swift; sourceTree = "<group>"; };
+		DFBACDAB29D7C5AB002E0669 /* TeamFightTactisTeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamFightTactisTeamView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +157,7 @@
 			children = (
 				DFBACD8E29D70A37002E0669 /* TeamFightTactisMainView.swift */,
 				DFBACD9A29D71D17002E0669 /* TeamFightTactisResultsView.swift */,
+				DFBACDAB29D7C5AB002E0669 /* TeamFightTactisTeamView.swift */,
 			);
 			path = "TeamFight Tactis";
 			sourceTree = "<group>";
@@ -156,6 +167,7 @@
 			children = (
 				DFBACD8C29D70A26002E0669 /* TrackmaniaMainView.swift */,
 				DFBACD9829D71CEF002E0669 /* TrackmaniaResultsView.swift */,
+				DFBACDA929D7C599002E0669 /* TrackmaniaTeamView.swift */,
 			);
 			path = Trackmania;
 			sourceTree = "<group>";
@@ -165,6 +177,7 @@
 			children = (
 				DFBACD8A29D70A0F002E0669 /* SuperSmashBrosMainView.swift */,
 				DFBACD9629D71C60002E0669 /* SuperSmashBrosResultsView.swift */,
+				DFBACDA629D7C57E002E0669 /* SuperSmashBrosTeamView.swift */,
 			);
 			path = "Super Smash Bros";
 			sourceTree = "<group>";
@@ -174,6 +187,7 @@
 			children = (
 				DFBACD8829D70A04002E0669 /* RocketLeagueMainView.swift */,
 				DFBACD9429D71B53002E0669 /* RocketLeagueResultsView.swift */,
+				DFBACDA329D7C55D002E0669 /* RocketLeagueTeamView.swift */,
 			);
 			path = "Rocket League";
 			sourceTree = "<group>";
@@ -183,6 +197,7 @@
 			children = (
 				DFBACD8629D709E4002E0669 /* ValorantMainView.swift */,
 				DFBACD9229D719F2002E0669 /* ValorantResultsView.swift */,
+				DFBACDA129D7C3B1002E0669 /* ValorantTeamView.swift */,
 			);
 			path = Valorant;
 			sourceTree = "<group>";
@@ -192,7 +207,7 @@
 			children = (
 				DFBACD8429D709D2002E0669 /* LeaguesOfLegendsMainView.swift */,
 				DFBACD9029D71717002E0669 /* LeaguesOfLegendsResultsView.swift */,
-				DFBACD9C29D71DD4002E0669 /* LeaguesOfLegendsTeam.swift */,
+				DFBACD9C29D71DD4002E0669 /* LeaguesOfLegendsTeamView.swift */,
 			);
 			path = "Leagues of Legends";
 			sourceTree = "<group>";
@@ -277,22 +292,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFBACD9329D719F2002E0669 /* ValorantResultsView.swift in Sources */,
+				DFBACDAC29D7C5AB002E0669 /* TeamFightTactisTeamView.swift in Sources */,
 				DFBACD8B29D70A0F002E0669 /* SuperSmashBrosMainView.swift in Sources */,
+				DFBACDA729D7C57E002E0669 /* SuperSmashBrosTeamView.swift in Sources */,
 				DFBACD9B29D71D17002E0669 /* TeamFightTactisResultsView.swift in Sources */,
 				DFBACD9129D71717002E0669 /* LeaguesOfLegendsResultsView.swift in Sources */,
 				DF67C33F29D6CF27009ABCB9 /* ContentView.swift in Sources */,
 				DFBACD9929D71CEF002E0669 /* TrackmaniaResultsView.swift in Sources */,
+				DFBACDA429D7C55D002E0669 /* RocketLeagueTeamView.swift in Sources */,
 				DFBACD9729D71C60002E0669 /* SuperSmashBrosResultsView.swift in Sources */,
 				DFBACD9529D71B53002E0669 /* RocketLeagueResultsView.swift in Sources */,
 				DFBACD8929D70A04002E0669 /* RocketLeagueMainView.swift in Sources */,
 				DFBACD8129D6F21C002E0669 /* DirectView.swift in Sources */,
+				DFBACDA229D7C3B1002E0669 /* ValorantTeamView.swift in Sources */,
 				DF67C33D29D6CF27009ABCB9 /* Karmine_CorpApp.swift in Sources */,
 				DFBACD8F29D70A37002E0669 /* TeamFightTactisMainView.swift in Sources */,
-				DFBACD9D29D71DD4002E0669 /* LeaguesOfLegendsTeam.swift in Sources */,
+				DFBACD9D29D71DD4002E0669 /* LeaguesOfLegendsTeamView.swift in Sources */,
 				DFBACD7829D6D9AD002E0669 /* EsportsMainView.swift in Sources */,
 				DFBACD8D29D70A26002E0669 /* TrackmaniaMainView.swift in Sources */,
 				DFBACD8729D709E4002E0669 /* ValorantMainView.swift in Sources */,
 				DFBACD8529D709D2002E0669 /* LeaguesOfLegendsMainView.swift in Sources */,
+				DFBACDAA29D7C599002E0669 /* TrackmaniaTeamView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
