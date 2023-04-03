@@ -17,7 +17,7 @@ struct ContentView: View {
                     .edgesIgnoringSafeArea(.all)
                     .opacity(1.0)
                 VStack {
-                    NavigationLink(destination: EsportsMainView()) {
+                    NavigationLink(destination: ActualitesView()) {
                         Text("Actualités")
                             .font(.custom("LEMONMILK-Bold", size: 28))
                             .foregroundColor(.white)

@@ -11,6 +11,7 @@
 		DF67C33F29D6CF27009ABCB9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF67C33E29D6CF27009ABCB9 /* ContentView.swift */; };
 		DF67C34129D6CF28009ABCB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF67C34029D6CF28009ABCB9 /* Assets.xcassets */; };
 		DF67C34429D6CF28009ABCB9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF67C34329D6CF28009ABCB9 /* Preview Assets.xcassets */; };
+		DF68362B29DB4905000432FA /* ActualitesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF68362A29DB4905000432FA /* ActualitesView.swift */; };
 		DFBACD7829D6D9AD002E0669 /* EsportsMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBACD7729D6D9AD002E0669 /* EsportsMainView.swift */; };
 		DFBACD8129D6F21C002E0669 /* DirectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBACD8029D6F21C002E0669 /* DirectView.swift */; };
 		DFBACD8329D6F30E002E0669 /* LEMONMILK-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DFBACD8229D6F30E002E0669 /* LEMONMILK-Bold.otf */; };
@@ -40,6 +41,7 @@
 		DF67C33E29D6CF27009ABCB9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DF67C34029D6CF28009ABCB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF67C34329D6CF28009ABCB9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DF68362A29DB4905000432FA /* ActualitesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActualitesView.swift; sourceTree = "<group>"; };
 		DFBACD7729D6D9AD002E0669 /* EsportsMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EsportsMainView.swift; sourceTree = "<group>"; };
 		DFBACD7C29D6DA48002E0669 /* Karmine-Corp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Karmine-Corp-Info.plist"; sourceTree = SOURCE_ROOT; };
 		DFBACD8029D6F21C002E0669 /* DirectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectView.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 		DFBACD6A29D6D888002E0669 /* Actualites */ = {
 			isa = PBXGroup;
 			children = (
+				DF68362A29DB4905000432FA /* ActualitesView.swift */,
 			);
 			path = Actualites;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				DFBACD9B29D71D17002E0669 /* TeamFightTactisResultsView.swift in Sources */,
 				DFBACD9129D71717002E0669 /* LeaguesOfLegendsResultsView.swift in Sources */,
 				DF67C33F29D6CF27009ABCB9 /* ContentView.swift in Sources */,
+				DF68362B29DB4905000432FA /* ActualitesView.swift in Sources */,
 				DFBACD9929D71CEF002E0669 /* TrackmaniaResultsView.swift in Sources */,
 				DFBACDA429D7C55D002E0669 /* RocketLeagueTeamView.swift in Sources */,
 				DFBACD9729D71C60002E0669 /* SuperSmashBrosResultsView.swift in Sources */,
