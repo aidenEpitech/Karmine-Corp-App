@@ -52,7 +52,11 @@ struct ContentView: View {
                             .padding(.all)
                     }
                     
-                    NavigationLink(destination: EsportsMainView()) {
+                    Button(action: {
+                        if let url = URL(string: "https://karminecorp.fr/") {
+                            UIApplication.shared.open(url)
+                        }
+                    }) {
                         Text("Shop")
                             .font(.custom("LEMONMILK-Bold", size: 28))
                             .fontWeight(.bold)

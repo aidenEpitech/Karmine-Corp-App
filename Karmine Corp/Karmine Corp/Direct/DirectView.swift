@@ -6,8 +6,87 @@
 //
 
 import SwiftUI
+import Foundation
+import Combine
+import UIKit
+
+class StreamerStatus: ObservableObject {
+    @Published var isLive: Bool = false
+    var streamerName: String
+
+    init(streamerName: String) {
+        self.streamerName = streamerName
+        checkIfStreamerIsLive(streamerName: streamerName)
+    }
+
+    func checkIfStreamerIsLive(streamerName: String) {
+        let url = URL(string: "https://www.twitch.tv/\(streamerName)")!
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            if let data = data, let result = String(data: data, encoding: .utf8) {
+                DispatchQueue.main.async {
+                    self.isLive = result.contains("\"isLiveBroadcast\":true")
+                }
+            }
+        }.resume()
+    }
+}
+
+struct StreamerView: View {
+    @ObservedObject var streamerStatus: StreamerStatus
+    
+    func displayName(for streamerName: String) -> String {
+        switch streamerName {
+        case "kamet0": return "Kameto  "
+        case "ScreaM": return "Scream  "
+        case "xms51": return "xms  "
+        case "saken_lol": return "Saken  "
+        case "itachi_rl": return "Itachi  "
+        case "Newzeraaaa": return "Newzera  "
+        case "nivera": return "Nivera  "
+        case "shinsznn": return "Shin  "
+        case "kaori123": return "Kaori  "
+        case "skeanz": return "Skeanz  "
+        case "Cabochardlol": return "Cabochard  "
+        case "canbizz_": return "Canbizz  "
+        case "bren_tm2": return "Bren  "
+        case "kurama_ssb": return "Kurama  "
+        case "vatira_": return "Vatira  "
+        case "exotiikrl": return "ExoTiik  "
+            
+        default: return streamerName
+        }
+    }
+    
+    func openStreamerURL() {
+        guard let url = URL(string: "https://www.twitch.tv/\(streamerStatus.streamerName)") else {
+            return
+        }
+        UIApplication.shared.open(url)
+    }
+
+    var body: some View {
+        Button(action: openStreamerURL) {
+            Text(displayName(for: streamerStatus.streamerName))
+                .background(streamerStatus.isLive ? Color.green : Color.red)
+                .font(.custom("LEMONMILK-Bold", size: 20))
+                .foregroundColor(.white)
+                .cornerRadius(9)
+                .padding(.bottom)
+        }
+    }
+}
 
 struct DirectView: View {
+    @State private var streamerStatuses: [StreamerStatus] = [
+        "kamet0", "ScreaM", "xms51", "saken_lol", "itachi_rl", "Newzeraaaa", "nivera", "shinsznn", "kaori123", "skeanz", "Cabochardlol", "exotiikrl", "vatira_", "kurama_ssb", "bren_tm2", "canbizz_"
+    ].map { StreamerStatus(streamerName: $0) }
+    
+    func sortStreamerStatuses() {
+        streamerStatuses.sort { a, b in
+            return a.isLive && !b.isLive
+        }
+    }
+
     var body: some View {
         NavigationView {
             ZStack {
@@ -16,142 +95,32 @@ struct DirectView: View {
                     .scaledToFill()
                     .edgesIgnoringSafeArea(.all)
                     .opacity(1.0)
-                
-                VStack{
+
+                VStack {
                     Text("Actuellement en direct : \n sur twitch")
                         .font(.custom("LEMONMILK-Bold", size: 20))
                         .fontWeight(.bold)
                         .foregroundColor(Color.white)
                         .multilineTextAlignment(.center)
-                        .padding(.all)                            .overlay(
+                        .padding(.all)
+                        .overlay(
                             RoundedRectangle(cornerRadius: 5)
                                 .stroke(.white, lineWidth: 2)
                         )
                         .padding(.all)
-                        Spacer()
-                
-                    HStack{
-                        Text("Kameto")
-                            .background(.green)
-                            .font(.custom("LEMONMILK-Bold", size: 20))
-                            .foregroundColor(.white)
-                            .cornerRadius(9)
-                            .padding(.bottom)
-                        Text("scream")
-                            .background(.green)
-                            .font(.custom("LEMONMILK-Bold", size: 20))
-                            .foregroundColor(.white)
-                            .cornerRadius(9)
-                            .padding(.bottom)
-                        Text("xms")
-                            .background(.green)
-                            .font(.custom("LEMONMILK-Bold", size: 20))
-                            .foregroundColor(.white)
-                            .cornerRadius(9)
-                            .padding(.bottom)
-                            
-                        Text("saken")
-                            .background(.green)
-                            .font(.custom("LEMONMILK-Bold", size: 20))
-                            .foregroundColor(.white)
-                            .cornerRadius(9)
-                            .padding(.bottom)
+                    
+                    ScrollView {
+                        VStack(alignment: .center, spacing: 10) {
+                            ForEach(streamerStatuses, id: \.streamerName) { streamerStatus in
+                                StreamerView(streamerStatus: streamerStatus)
+                            }
+                        }
+                        .padding(.bottom)
+                        .onAppear {
+                            sortStreamerStatuses()
+                        }
                     }
-                    HStack{
-                        Text("itachi")
-                            .background(.green)
-                            .font(.custom("LEMONMILK-Bold", size: 20))
-                            .foregroundColor(.white)
-                            .cornerRadius(9)
-                            .padding(.bottom)
-                        Text("newzera")
-                            .background(.red)
-                            .font(.custom("LEMONMILK-Bold", size: 20))
-                            .foregroundColor(.white)
-                            .cornerRadius(9)
-                            .padding(.bottom)
-                        Text("nivera")
-                            .background(.red)
-                            .font(.custom("LEMONMILK-Bold", size: 20))
-                            .foregroundColor(.white)
-                            .cornerRadius(9)
-                            .padding(.bottom)
-                        Text("shin")
-                            .background(.red)
-                            .font(.custom("LEMONMILK-Bold", size: 20))
-                            .foregroundColor(.white)
-                            .cornerRadius(9)
-                            .padding(.bottom)
-                    }
-                    HStack{
-                        Text("kaori")
-                            .background(.red)
-                            .font(.custom("LEMONMILK-Bold", size: 20))
-                            .foregroundColor(.white)
-                            .cornerRadius(9)
-                            .padding(.bottom)
-                        Text("skeanz")
-                            .background(.red)
-                            .font(.custom("LEMONMILK-Bold", size: 20))
-                            .foregroundColor(.white)
-                            .cornerRadius(9)
-                            .padding(.bottom)
-                        Text("cabochard")
-                            .background(.red)
-                            .font(.custom("LEMONMILK-Bold", size: 20))
-                            .foregroundColor(.white)
-                            .cornerRadius(9)
-                            .padding(.bottom)
-                    }
-                    HStack{
-                        Text("exotiik")
-                            .background(.red)
-                            .font(.custom("LEMONMILK-Bold", size: 20))
-                            .foregroundColor(.white)
-                            .cornerRadius(9)
-                            .padding(.bottom)
-                        Text("vatira")
-                            .background(.red)
-                            .font(.custom("LEMONMILK-Bold", size: 20))
-                            .foregroundColor(.white)
-                            .cornerRadius(9)
-                            .padding(.bottom)
-                        Text("kurama")
-                            .background(.red)
-                            .font(.custom("LEMONMILK-Bold", size: 20))
-                            .foregroundColor(.white)
-                            .cornerRadius(9)
-                            .padding(.bottom)
-                    }
-                    HStack{
-                        Text("otaaaq")
-                            .background(.red)
-                            .font(.custom("LEMONMILK-Bold", size: 20))
-                            .foregroundColor(.white)
-                            .cornerRadius(9)
-                            .padding(.bottom)
-                        Text("breen")
-                            .background(.red)
-                            .font(.custom("LEMONMILK-Bold", size: 20))
-                            .foregroundColor(.white)
-                            .cornerRadius(9)
-                            .padding(.bottom)
-                        Text("canbizz")
-                            .background(.red)
-                            .font(.custom("LEMONMILK-Bold", size: 20))
-                            .foregroundColor(.white)
-                            .cornerRadius(9)
-                            .padding(.bottom)
-                    }
-                    HStack{
-                        Text("double61")
-                            .background(.red)
-                            .font(.custom("LEMONMILK-Bold", size: 20))
-                            .foregroundColor(.white)
-                            .cornerRadius(9)
-                            .padding(.bottom)
-                    }
-                    Spacer()
+                    .padding(.leading, 10)
                 }
             }
         }
