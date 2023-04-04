@@ -31,6 +31,41 @@ struct ActualitesView: View {
                     ScrollView {
                         VStack {
                             Button(action: {
+                                if let url = URL(string: "") {
+                                    UIApplication.shared.open(url)
+                                }
+                            }) {
+                                Image("actu-4")
+                                    .resizable()
+                                    .frame(width: 380, height: 139)
+                            }
+                        }
+                        .background(.white)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 5)
+                                .stroke(.white, lineWidth: 2)
+                        )
+                        .padding(.all)
+
+                        VStack {
+                            Button(action: {
+                                if let url = URL(string: "https://www.youtube.com/watch?v=x3tzWFKn4TY") {
+                                    UIApplication.shared.open(url)
+                                }
+                            }) {
+                                Image("actu-3")
+                                    .resizable()
+                                    .frame(width: 380, height: 139)
+                            }
+                        }
+                        .background(.white)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 5)
+                                .stroke(.white, lineWidth: 2)
+                        )
+                        .padding(.bottom)
+                        VStack {
+                            Button(action: {
                                 if let url = URL(string: "https://karminecorp.fr/") {
                                     UIApplication.shared.open(url)
                                 }
@@ -45,7 +80,24 @@ struct ActualitesView: View {
                             RoundedRectangle(cornerRadius: 5)
                                 .stroke(.white, lineWidth: 2)
                         )
-                        .padding(.all)
+                        .padding(.bottom)
+                        VStack {
+                            Button(action: {
+                                if let url = URL(string: "https://www.youtube.com/watch?v=BmobSGEDZME") {
+                                    UIApplication.shared.open(url)
+                                }
+                            }) {
+                                Image("actu-6")
+                                    .resizable()
+                                    .frame(width: 380, height: 139)
+                            }
+                        }
+                        .background(.white)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 5)
+                                .stroke(.white, lineWidth: 2)
+                        )
+                        .padding(.bottom)
                         VStack {
                             Button(action: {
                                 if let url = URL(string: "https://www.youtube.com/watch?v=x3tzWFKn4TY") {
@@ -62,6 +114,24 @@ struct ActualitesView: View {
                             RoundedRectangle(cornerRadius: 5)
                                 .stroke(.white, lineWidth: 2)
                         )
+                        .padding(.bottom)
+                        VStack {
+                            Button(action: {
+                                if let url = URL(string: "https://www.youtube.com/watch?v=MbygrI3G2rw") {
+                                    UIApplication.shared.open(url)
+                                }
+                            }) {
+                                Image("actu-5")
+                                    .resizable()
+                                    .frame(width: 380, height: 139)
+                            }
+                        }
+                        .background(.white)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 5)
+                                .stroke(.white, lineWidth: 2)
+                        )
+                        .padding(.bottom)
                     }
                 }
             }

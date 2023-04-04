@@ -17,6 +17,9 @@ struct ContentView: View {
                     .edgesIgnoringSafeArea(.all)
                     .opacity(1.0)
                 VStack {
+                    Spacer()
+                    //Spacer()
+
                     NavigationLink(destination: ActualitesView()) {
                         Text("Actualités")
                             .font(.custom("LEMONMILK-Bold", size: 28))
@@ -68,6 +71,48 @@ struct ContentView: View {
                             )
                             .padding(.all)
                     }
+                    Spacer()
+                    HStack {
+                        Button(action: {
+                            if let url = URL(string: "https://www.instagram.com/karminecorp/") {
+                                UIApplication.shared.open(url)
+                            }
+                        }) {
+                            Image("instagram-icon-profile")
+                                .resizable()
+                                .frame(width: 30, height: 30)
+                        }
+                        Button(action: {
+                            if let url = URL(string: "https://twitter.com/KarmineCorp") {
+                                UIApplication.shared.open(url)
+                            }
+                        }) {
+                            Image("twitter-icon-profile")
+                                .resizable()
+                                .frame(width: 50, height: 50)
+                        }
+                        Button(action: {
+                            if let url = URL(string: "https://www.tiktok.com/@karmine_corp") {
+                                UIApplication.shared.open(url)
+                            }
+                        }) {
+                            Image("tiktok-icon-profile")
+                                .resizable()
+                                .frame(width: 35, height: 35)
+                        }
+                        Button(action: {
+                            if let url = URL(string: "https://www.youtube.com/channel/UCW5Ma_xnAweFIXCGOAZECAA") {
+                                UIApplication.shared.open(url)
+                            }
+                        }) {
+                            Image("youtube-icon-profile")
+                                .resizable()
+                                .frame(width: 50, height: 50)
+                        }
+                    }
+                    Text("created by aiden ツ")
+                        .foregroundColor(.white)
+                        .padding(.leading, 230.0)
                 }
             }
         }
